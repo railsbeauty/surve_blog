@@ -2,6 +2,7 @@ Blogger::Application.routes.draw do
   root to: 'articles#index'
   resources :articles
   resources :comments
+  resources :tags
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
