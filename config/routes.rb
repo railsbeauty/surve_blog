@@ -3,7 +3,7 @@ Blogger::Application.routes.draw do
   resources :articles
   resources :comments
   resources :tags
-  resource :authors
+  resources :authors
   resources :author_sessions, only: [ :new, :create, :destroy ]
 
   match 'login'  => 'author_sessions#new'

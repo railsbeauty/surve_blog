@@ -76,7 +76,7 @@ class AuthorsController < ApplicationController
     @author.destroy
 
     respond_to do |format|
-      format.html { redirect_to authors_url }
+      format.html { redirect_to article_path }
       format.json { head :no_content }
     end
   end
